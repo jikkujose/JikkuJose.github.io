@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-cover: false
+cover: "/assets/images/cover.jpg"
 about: 'about.html'
 ---
 
@@ -15,7 +15,8 @@ about: 'about.html'
             {% endif %}
             <h1 class="blog-title">{{ site.name }}</h1>
             <h2 class="blog-description"> 
-                {{ site.description }}. 
+                {{ site.description }}
+                <br/>
                 {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}
             </h2>
         </div>
