@@ -1,3 +1,8 @@
+---
+---
+
+@import "theme.scss";
+
 /* ==========================================================================
    Table of Contents
    ========================================================================== */
@@ -152,7 +157,7 @@ a {
 }
 
 a:hover {
-    color: #57A3E8;
+    color: $link_hover;
 }
 
 h1 a, h2 a, h3 a,
@@ -225,7 +230,7 @@ blockquote cite {
 blockquote cite a { font-weight: normal; }
 
 mark {
-    background-color: #ffc336;
+    background-color: $mark-bg;
 }
 
 code, tt {
