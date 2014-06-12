@@ -1,0 +1,13 @@
+name: "my thoughts in words"
+description: "technology | ideas | philosophy"
+meta_description: "Blog about technology, philosophy, physics and probably anything interesting. Yes, of course its relative :)"
+
+markdown: redcarpet
+pygments: true
+logo: false
+paginate: 15
+
+# Details for the RSS feed generator
+url:            'blog url'
+author:         'Jikku Jose'
+author_description: 'Philosopher disguised as an entrepreneur'
