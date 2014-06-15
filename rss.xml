@@ -8,7 +8,23 @@
     <title>my thoughts in words</title>
     <link>blog url</link>
     <description>technology | ideas | philosophy | science | spirituality</description>
-    <pubDate>Thu, 12 Jun 2014 02:20:00 +0530</pubDate>
+    <pubDate>Mon, 16 Jun 2014 00:52:02 +0530</pubDate>
+    <item>
+      <title>Worth of the Improbable</title>
+      <link>blog url/2014/06/16/worth_of_the_improbable.html</link>
+      <description>&lt;p&gt;Information is inversely proportional to the probability. Have been fascinated at the sheer beauty of the improbable events. They become the stories people love because there is information in it, there is life. &lt;/p&gt;
+</description>
+      <pubDate>Mon, 16 Jun 2014 00:52:02 +0530</pubDate>
+      <dc:date>2014-06-16T00:52:02+05:30</dc:date>
+    </item>
+    <item>
+      <title>Testing drafts</title>
+      <link>blog url/2014/06/15/testing-drafts.html</link>
+      <description>&lt;p&gt;A place to test most features of the blog without messing with the actual site.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 15 Jun 2014 21:03:35 +0530</pubDate>
+      <dc:date>2014-06-15T21:03:35+05:30</dc:date>
+    </item>
     <item>
       <title>My first post</title>
       <link>blog url/jekyll/test/2014/06/12/my-first-post.html</link>
@@ -17,6 +33,6 @@
       <pubDate>Thu, 12 Jun 2014 02:20:00 +0530</pubDate>
       <dc:date>2014-06-12T02:20:00+05:30</dc:date>
     </item>
-    <dc:date>2014-06-12T02:20:00+05:30</dc:date>
+    <dc:date>2014-06-16T00:52:02+05:30</dc:date>
   </channel>
 </rss>
