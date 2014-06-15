@@ -125,7 +125,7 @@ a {
   transition: color ease 0.3s; }
 
 a:hover {
-  color: #801a2b; }
+  color: black; }
 
 h1 a, h2 a, h3 a,
 h4 a, h5 a, h6 a {
