@@ -8,7 +8,15 @@
     <title>my thoughts in words</title>
     <link>blog url</link>
     <description>technology | ideas | philosophy | science | spirituality</description>
-    <pubDate>Thu, 12 Jun 2014 02:20:00 +0530</pubDate>
+    <pubDate>Tue, 17 Jun 2014 00:00:00 +0530</pubDate>
+    <item>
+      <title>Code Snippets</title>
+      <link>blog url/code/2014/06/17/code-snippets.html</link>
+      <description>&lt;p&gt;I imagine this blog to have a significant number of code snippets and this very post is an attempt to find a solution for it.&lt;/p&gt;
+</description>
+      <pubDate>Tue, 17 Jun 2014 00:00:00 +0530</pubDate>
+      <dc:date>2014-06-17T00:00:00+05:30</dc:date>
+    </item>
     <item>
       <title>My first post</title>
       <link>blog url/jekyll/test/2014/06/12/my-first-post.html</link>
@@ -17,6 +25,6 @@
       <pubDate>Thu, 12 Jun 2014 02:20:00 +0530</pubDate>
       <dc:date>2014-06-12T02:20:00+05:30</dc:date>
     </item>
-    <dc:date>2014-06-12T02:20:00+05:30</dc:date>
+    <dc:date>2014-06-17T00:00:00+05:30</dc:date>
   </channel>
 </rss>
