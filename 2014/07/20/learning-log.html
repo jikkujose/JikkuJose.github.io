@@ -35,38 +35,46 @@
         </header>
         
         <span class="post-meta">
-        	<time datetime="2014-06-17">17 Jun 2014</time>
+        	<time datetime="2014-07-20">20 Jul 2014</time>
         	
        	</span>
 
-        <h1 class="post-title">Code Snippets</h1>
+        <h1 class="post-title">learning.log</h1>
 
         <section class="post-content">
-            <p>I imagine this blog to have a significant number of code snippets and this very post is an attempt to find a solution for it.</p>
+            <p>Its been nearly an year since I delved into Ruby/Unix. Most of what I did hovered around learning from online resources and working on simple projects, I am happy that I learnt quite a lot. I can totally imagining surprising the person I was, an year back. But, I fear: whether I actually failed. Well no, its not a question about losing trust in what I am learning. But I feel: the rate of progress that I am making isn&#39;t fast enough.</p>
 
-<p>And I found it! Not only was the solution easy, switching to a custom theme was also a cake walk. Take a look at the code used to generate the highlighted snippet:</p>
+<p>Have been reading quite a lot lately, mostly around clean, performant and maintainable code. Have got hooked, I must say to the goal of being a decent programmer. But frankly, irrespective of the knowledge I am acquiring, I doubt whether my path is the most efficient I could take; given the lack of time, I fear whether I should re-examine my ways.</p>
 
-<div class="highlight"><pre><code class="text">{% highlight ruby %}
-def show
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
-{% endhighlight %}</code></pre></div>
+<p>With that thought in the back of my head, I have been looking into improving my workflow or my schedules to be more productive, though I must admit not actively enough until recently. I happened to stumble on a comment in Reddit on a discussion about valuable skills:</p>
 
-<p>..will produce:</p>
+<blockquote>
+<p>Learn to learn efficiently; thats the most valuable skill!</p>
+</blockquote>
 
-<div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">show</span>
-  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
-  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
-    <span class="nb">format</span><span class="o">.</span><span class="n">html</span> <span class="c1"># show.html.erb</span>
-    <span class="nb">format</span><span class="o">.</span><span class="n">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="vi">@widget</span> <span class="p">}</span>
-  <span class="k">end</span>
-<span class="k">end</span></code></pre></div>
+<p>It was almost like an eyeopener for me! I realised: It possible, my methodology could be significantly inefficient or let alone fundamentally flawed. If so, the time that I am losing is enormous given that I am putting in too many hours lately.</p>
 
-<p>Wasn&#39;t that neat? :)</p>
+<p>In an attempt to figure out a better way to learn and keep track of the progress; I thought I will keep a log: <em>a simple text file to record anything worthwhile I learn along with the date I acquire it</em>. It could contain anything simple, may be even about discovering a simple Unix command&#39;s special flag. Absolutely anything but it will give an idea of what I am learning, reading or if at all whether I am making any significant progress. Even I can request for review of my progress to experts out there!</p>
+
+<h3>Implementation of the logging</h3>
+
+<p>I was wondering how to actually do it, I mean in an easier less messy way. And I think, I found a rather neat solution. I wanted a command that appended a text to a file with the date. I must say, irrespective of the rather stupid and very simple solution, the final solution looked perfect to me. Its a simple <em>alias</em> that appends date and the string passed to a file.</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span><span class="nb">alias </span><span class="nv">learnt</span><span class="o">=</span><span class="s2">&quot;echo `date` &#39; - &#39; $@ &gt;&gt; ~/Links/learning.log&quot;</span></code></pre></div>
+
+<p>So, that I can do:</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>learnt <span class="s2">&quot;Performance comparison&#39;s about various Ruby servers&quot;</span></code></pre></div>
+
+<p>And the log will look like this:</p>
+
+<div class="highlight"><pre><code class="text">Sun Jul 20 19:14:02 IST 2014  -  Initial test log
+Sun Jul 20 19:18:34 IST 2014  -  Jekyll auto generation option
+Sun Jul 20 19:18:42 IST 2014  -  Another status for the sake of the example.
+Sun Jul 20 19:19:17 IST 2014  -  Just the like the one above!
+Sun Jul 20 19:23:32 IST 2014  -  Yes, just one more ;)</code></pre></div>
+
+<p>Perhaps, I can later do further analysis of the data given it is well formatted and ripe to grep pretty easily. Let <a href="http://www.twitter.com/JikkuJose">me</a> know, what you feel?</p>
 
         </section>
 
@@ -88,15 +96,15 @@ end
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=Code Snippets&amp;url=blog url/code/2014/06/17/code-snippets.html"
+                <a class="icon-twitter" href="http://twitter.com/share?text=learning.log&amp;url=blog url/2014/07/20/learning-log.html"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=blog url/code/2014/06/17/code-snippets.html"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=blog url/2014/07/20/learning-log.html"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=blog url/code/2014/06/17/code-snippets.html"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=blog url/2014/07/20/learning-log.html"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
