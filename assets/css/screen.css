@@ -125,7 +125,7 @@ a {
   transition: color ease 0.3s; }
 
 a:hover {
-  color: #801a2b; }
+  color: #801A2B; }
 
 h1 a, h2 a, h3 a,
 h4 a, h5 a, h6 a {
@@ -232,7 +232,7 @@ kbd {
   font-weight: bold;
   background: #f4f4f4;
   border-radius: 4px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 white inset; }
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #fff inset; }
 
 table {
   -moz-box-sizing: border-box;

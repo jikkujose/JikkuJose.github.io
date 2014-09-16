@@ -6,12 +6,20 @@
   xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
   <channel>
     <title>my thoughts in words</title>
-    <link>blog url</link>
+    <link>http://jikkujose.github.io</link>
     <description>technology | ideas | philosophy | science | spirituality</description>
-    <pubDate>Sun, 20 Jul 2014 00:00:00 +0530</pubDate>
+    <pubDate>Mon, 15 Sep 2014 00:00:00 +0530</pubDate>
+    <item>
+      <title>ഇന്നലെയ്ക്ക് മുന്‍പ് ഒരു ചിത്രപ്പൂട്ട്‌</title>
+      <link>http://jikkujose.github.io/2014/09/15/chithrapootu.html</link>
+      <description>&lt;p&gt;An excerpt from &lt;a href=&quot;http://chitturcollege.ac.in/personnal/shiju-joseph/&quot;&gt;Mr. Shiju Joseph&amp;#39;s&lt;/a&gt; MPhil thesis on Psycho Cultural Analysis of Popular Films in Malayalam, 2005. Reposting for better visibility and readability.&lt;/p&gt;
+</description>
+      <pubDate>Mon, 15 Sep 2014 00:00:00 +0530</pubDate>
+      <dc:date>2014-09-15T00:00:00+05:30</dc:date>
+    </item>
     <item>
       <title>learning.log</title>
-      <link>blog url/2014/07/20/learning-log.html</link>
+      <link>http://jikkujose.github.io/2014/07/20/learning-log.html</link>
       <description>&lt;p&gt;Its been nearly an year since I delved into Ruby/Unix. Most of what I did hovered around learning from online resources and working on simple projects, I am happy that I learnt quite a lot. I can totally imagine surprising the person I was an year back. But, I fear: whether I actually failed! Well no, its not a question about losing trust in what I am learning. But I feel the rate of progress that I am making isn&amp;#39;t fast enough.&lt;/p&gt;
 </description>
       <pubDate>Sun, 20 Jul 2014 00:00:00 +0530</pubDate>
@@ -19,7 +27,7 @@
     </item>
     <item>
       <title>Code Snippets</title>
-      <link>blog url/code/2014/06/17/code-snippets.html</link>
+      <link>http://jikkujose.github.io/code/2014/06/17/code-snippets.html</link>
       <description>&lt;p&gt;I imagine this blog to have a significant number of code snippets and this very post is an attempt to find a solution for it.&lt;/p&gt;
 </description>
       <pubDate>Tue, 17 Jun 2014 00:00:00 +0530</pubDate>
@@ -27,12 +35,12 @@
     </item>
     <item>
       <title>My first post</title>
-      <link>blog url/jekyll/test/2014/06/12/my-first-post.html</link>
+      <link>http://jikkujose.github.io/jekyll/test/2014/06/12/my-first-post.html</link>
       <description>&lt;p&gt;Have been thinking to blog for quite a long time, I hope this attempt won&amp;#39;t go futile. It seems recently, I have been wishing quite a lot that I had a blog to share my thoughts.&lt;/p&gt;
 </description>
       <pubDate>Thu, 12 Jun 2014 02:20:00 +0530</pubDate>
       <dc:date>2014-06-12T02:20:00+05:30</dc:date>
     </item>
-    <dc:date>2014-07-20T00:00:00+05:30</dc:date>
+    <dc:date>2014-09-15T00:00:00+05:30</dc:date>
   </channel>
 </rss>
