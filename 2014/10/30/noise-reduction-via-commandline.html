@@ -35,38 +35,39 @@
         </header>
         
         <span class="post-meta">
-        	<time datetime="2014-06-17">17 Jun 2014</time>
+        	<time datetime="2014-10-30">30 Oct 2014</time>
         	
        	</span>
 
-        <h1 class="post-title">Code Snippets</h1>
+        <h1 class="post-title">Noise reduction in audio track of a video</h1>
 
         <section class="post-content">
-            <p>I imagine this blog to have a significant number of code snippets and this very post is an attempt to find a solution for it.</p>
+            <p>In the spirit of doing as much as work via command line, I removed a noisy audio from a tech talk I wanted to view. This is just a note to my future self to the way I did it.</p>
 
-<p>And I found it! Not only was the solution easy, switching to a custom theme was also a cake walk. Take a look at the code used to generate the highlighted snippet:</p>
+<p>Steps:</p>
 
-<div class="highlight"><pre><code class="text">{% highlight ruby %}
-def show
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
-{% endhighlight %}</code></pre></div>
+<ol>
+  <li>
+    <p>Separate audio from video</p>
 
-<p>..will produce:</p>
+    <p><code>strip_audio video_file.mp4</code></p>
+  </li>
+  <li>
+    <p>Generate noise profile of the video</p>
 
-<div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">show</span>
-  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:id</span><span class="o">]</span><span class="p">)</span>
-  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
-    <span class="nb">format</span><span class="o">.</span><span class="n">html</span> <span class="c1"># show.html.erb</span>
-    <span class="nb">format</span><span class="o">.</span><span class="n">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="vi">@widget</span> <span class="p">}</span>
-  <span class="k">end</span>
-<span class="k">end</span></code></pre></div>
+    <p><code>sox audio_file.mp3 -n trim 0 2.5 np.noise_profile</code></p>
+  </li>
+  <li>
+    <p>Remove the noise</p>
 
-<p>Wasn’t that neat? :)</p>
+    <p><code>sox audio_file.mp3 cleaned.mp3 noisered np.noise_profile .2</code></p>
+  </li>
+  <li>
+    <p>Replace the video with the new audio</p>
+
+    <p><code>ffmpeg -i video_file.mp4 -i cleaned.mp3 -map 0:v -map 1:a -codec copy -shortest out.mp4</code></p>
+  </li>
+</ol>
 
         </section>
 
@@ -88,15 +89,15 @@ end
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=Code Snippets&amp;url=http://jikkujose.github.io/code/2014/06/17/code-snippets.html"
+                <a class="icon-twitter" href="http://twitter.com/share?text=Noise reduction in audio track of a video&amp;url=http://jikkujose.github.io/2014/10/30/noise-reduction-via-commandline.html"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://jikkujose.github.io/code/2014/06/17/code-snippets.html"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://jikkujose.github.io/2014/10/30/noise-reduction-via-commandline.html"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://jikkujose.github.io/code/2014/06/17/code-snippets.html"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://jikkujose.github.io/2014/10/30/noise-reduction-via-commandline.html"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
