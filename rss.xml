@@ -8,7 +8,16 @@
     <title>my thoughts in words</title>
     <link>http://jikkujose.github.io</link>
     <description>... away I float, seeking what I am unsure will be mine..</description>
-    <pubDate>Thu, 30 Oct 2014 00:00:00 +0530</pubDate>
+    <pubDate>Sat, 06 Dec 2014 00:00:00 +0530</pubDate>
+    <item>
+      <title>Transgenerational Transmission</title>
+      <link>http://jikkujose.github.io/2014/12/06/transgenrational-transmission.html</link>
+      <description>&lt;p&gt;Following is an excerpt is from an &lt;a href=&quot;http://www.newrepublic.com/article/120144/trauma-genetic-scientists-say-parents-are-passing-ptsd-kids&quot;&gt;article&lt;/a&gt; describing the way parents transferring PTSD to their children.&lt;/p&gt;
+
+</description>
+      <pubDate>Sat, 06 Dec 2014 00:00:00 +0530</pubDate>
+      <dc:date>2014-12-06T00:00:00+05:30</dc:date>
+    </item>
     <item>
       <title>Noise reduction in audio track of a video</title>
       <link>http://jikkujose.github.io/2014/10/30/noise-reduction-via-commandline.html</link>
@@ -54,6 +63,6 @@
       <pubDate>Thu, 12 Jun 2014 02:20:00 +0530</pubDate>
       <dc:date>2014-06-12T02:20:00+05:30</dc:date>
     </item>
-    <dc:date>2014-10-30T00:00:00+05:30</dc:date>
+    <dc:date>2014-12-06T00:00:00+05:30</dc:date>
   </channel>
 </rss>
