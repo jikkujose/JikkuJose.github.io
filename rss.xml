@@ -8,7 +8,16 @@
     <title>my thoughts in words</title>
     <link>http://jikkujose.github.io</link>
     <description>... away I float, seeking what I am unsure will be mine..</description>
-    <pubDate>Sat, 06 Dec 2014 00:00:00 +0530</pubDate>
+    <pubDate>Sat, 03 Oct 2015 00:00:00 +0530</pubDate>
+    <item>
+      <title>Marathon Training</title>
+      <link>http://jikkujose.github.io/2015/10/03/walk.html</link>
+      <description>&lt;p&gt;This is the second week I am going for the training with Nikhil to prepare for a Marathon on November 1st. Though the 10 km marathon seems to be daunting especially for someone like me who does close no exercise, I managed to walk 5 Kms at nearly full speed the first day itself. I guess I should trust iPhone’s claim that I walk 4.5 Kms daily!&lt;/p&gt;
+
+</description>
+      <pubDate>Sat, 03 Oct 2015 00:00:00 +0530</pubDate>
+      <dc:date>2015-10-03T00:00:00+05:30</dc:date>
+    </item>
     <item>
       <title>Transgenerational Transmission</title>
       <link>http://jikkujose.github.io/2014/12/06/transgenrational-transmission.html</link>
@@ -63,6 +72,6 @@
       <pubDate>Thu, 12 Jun 2014 02:20:00 +0530</pubDate>
       <dc:date>2014-06-12T02:20:00+05:30</dc:date>
     </item>
-    <dc:date>2014-12-06T00:00:00+05:30</dc:date>
+    <dc:date>2015-10-03T00:00:00+05:30</dc:date>
   </channel>
 </rss>
