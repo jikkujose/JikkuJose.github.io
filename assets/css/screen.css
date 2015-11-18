@@ -626,14 +626,14 @@ margin on the iframe, cause it breaks stuff. */
 .subscribe:hover:before {
   color: #50585D; }
 
-/* CSS tooltip saying "Subscribe!" - initially hidden */
+/* CSS tooltip saying "Follow Jikku" - initially hidden */
 .tooltip {
   opacity: 0;
   display: inline-block;
   padding: 4px 8px 5px 8px;
   position: absolute;
   top: -23px;
-  left: -21px;
+  left: -10px;
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.1rem;
   line-height: 1em;
