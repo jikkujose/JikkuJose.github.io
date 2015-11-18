@@ -60,19 +60,19 @@
 
 <p>I was wondering how to actually do it, I mean in an easier less messy way. And I think, I found a rather neat solution. I wanted a command that appended a text to a file with the date. I must say, irrespective of the rather stupid and very simple solution, the final solution looked perfect to me. Its a simple <em>alias</em> that appends date and the string passed to a file.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">alias </span><span class="nv">learnt</span><span class="o">=</span><span class="s2">&quot;echo `date` &#39; - &#39; $@ &gt;&gt; ~/Links/learning.log&quot;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">    <span class="nv">$ </span><span class="nb">alias </span><span class="nv">learnt</span><span class="o">=</span><span class="s2">&quot;echo `date` &#39; - &#39; $@ &gt;&gt; ~/Links/learning.log&quot;</span></code></pre></figure>
 
 <p>So, that I can do:</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>learnt <span class="s2">&quot;Performance comparison&#39;s about various Ruby servers&quot;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">    <span class="nv">$ </span>learnt <span class="s2">&quot;Performance comparison&#39;s about various Ruby servers&quot;</span></code></pre></figure>
 
 <p>And the log will look like this:</p>
 
-<div class="highlight"><pre><code class="language-text" data-lang="text">Sun Jul 20 19:14:02 IST 2014  -  Initial test log
+<figure class="highlight"><pre><code class="language-text" data-lang="text">Sun Jul 20 19:14:02 IST 2014  -  Initial test log
 Sun Jul 20 19:18:34 IST 2014  -  Jekyll auto generation option
 Sun Jul 20 19:18:42 IST 2014  -  Another status for the sake of the example.
 Sun Jul 20 19:19:17 IST 2014  -  Just the like the one above!
-Sun Jul 20 19:23:32 IST 2014  -  Yes, just one more ;)</code></pre></div>
+Sun Jul 20 19:23:32 IST 2014  -  Yes, just one more ;)</code></pre></figure>
 
 <p>Perhaps, I can later do further analysis of the data given it is well formatted and ripe to grep pretty easily. Let <a href="http://www.twitter.com/JikkuJose">me</a> know, what you feel?</p>
 

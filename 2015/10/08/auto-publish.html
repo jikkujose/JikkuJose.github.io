@@ -39,10 +39,44 @@
         	
        	</span>
 
-        <h1 class="post-title">Thought Superiority</h1>
+        <h1 class="post-title">Auto publish blog to Github</h1>
 
         <section class="post-content">
-            <p>I think someone who is open to scrutiny with a mind to correct one self has an absolute <strong>Superior Thought</strong>. Even better than most who may have better intrinsic capabilities. Because the former will always have the potential to learn and improve and will be in the path of constant improvement.</p>
+            <p>Github pages is an excellent way to publish static sites, but I hate one aspect of their implementation: Having the static sites’ assets in another branch: <code>gh-pages</code>. I think this is just wrong, especially when considering many projects forced to have their site in the same repo.</p>
+
+<p>I feel the coupling is unwanted and totally avoidable. Its much easier and saner to maintain a separate repo.</p>
+
+<p>Also, I just don’t understand the point of having the static site built at the server. This makes Jekyll to be a hard dependency for Github pages. Thus needing the plugins to be approved by Github, since there is a security vulnerability to use any plugin.</p>
+
+<p>Having said that, I too use Jekyll for this blog. But to avoid the need for using <code>gh-pages</code>, I maintain two separate projects. One that holds the built files in root (which will also will be used as static files for the site, in case they don’t find <code>gh-pages</code> branch).</p>
+
+<p>Since the setup is just a one time task, its not a big deal. But publishing the blog is. So, to avoid repetition involved, I wrote a simple <code>Rakefile</code> that helps me publish the blog using a single command.</p>
+
+<pre><code class="language-ruby">desc "Publish blog to Github"
+task :publish, :message do |t, args|
+  message = "Automated commit: #{args[:message] || 'Empty commit'}"
+
+  Dir.chdir('_site') do
+    system('git checkout -- CNAME')
+    system('git add .')
+    system("git commit -m '#{message}'")
+    system("git push")
+  end
+end
+</code></pre>
+
+<p>The <code>Rakefile</code> does the following:</p>
+
+<ol>
+  <li>Accepts a parameter as the commit message</li>
+  <li>Changes directory to build folder (<code>_site</code>)</li>
+  <li>Restores the <code>CNAME</code> file that gets deleted when the site regenerates.</li>
+  <li>Stage all changed files.</li>
+  <li>Commit all the staged files with the commit message</li>
+  <li>Push the change to server, effectively <em>publishing</em> the site.</li>
+</ol>
+
+<p>Incase, someone else is also as paranoid to do this, the script may come in handy. By the way this very post is to test the script ;)</p>
 
         </section>
 
@@ -64,15 +98,15 @@
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=Thought Superiority&amp;url=http://jikkujose.github.io/2015/10/08/on_thought.html"
+                <a class="icon-twitter" href="http://twitter.com/share?text=Auto publish blog to Github&amp;url=http://jikkujose.github.io/2015/10/08/auto-publish.html"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://jikkujose.github.io/2015/10/08/on_thought.html"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://jikkujose.github.io/2015/10/08/auto-publish.html"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://jikkujose.github.io/2015/10/08/on_thought.html"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://jikkujose.github.io/2015/10/08/auto-publish.html"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
