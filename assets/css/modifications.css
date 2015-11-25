@@ -1,7 +1,6 @@
-.reveal pre {
+.reveal pre code {
   font-family: monaco, monospace;
-}
-
-.reveal code {
-  font-family: monaco, monospace;
+  padding: 15px;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }

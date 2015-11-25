@@ -76,6 +76,11 @@ end
 </code></pre>
 </section>
 
+<section>
+<h3>Distribution of smart guys</h3>
+ <iframe class="stretch" id="ruby_distribution" data-chart=""></iframe>
+</section>
+
 <section data-markdown="">
 # Questions?
 </section>
@@ -88,17 +93,55 @@ end
     <script>
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
+      var data = [
+          {
+              value: 200,
+              color:"#F7464A",
+              highlight: "#FF5A5E",
+              label: "Ruby"
+          },
+          {
+              value: 50,
+              color: "#46BFBD",
+              highlight: "#5AD3D1",
+              label: "Python"
+          },
+          {
+              value: 100,
+              color: "#FDB45C",
+              highlight: "#FFC870",
+              label: "Javascript"
+          }
+      ];
       Reveal.initialize({
         controls: true,
         progress: true,
         history: true,
         center: true,
+        chart : {
+          items : [
+          {
+            selector : "#ruby_distribution",
+            type : "doughnut",
+            data : data,
+            options : {
+              responsive : true
+            },
+            canvas: {
+              width: "300px",
+              height: "300px"
+            }
+          }
+          ]
+        },
         
           transition: 'slide', // none/fade/slide/convex/concave/zoom
         
 
         // Optional reveal.js plugins
         dependencies: [
+          { src: '/reveal.js/plugin/chartjs/Chart.min.js'},
+          { src: '/reveal.js/plugin/chartjs/charted.js'},
           { src: '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
