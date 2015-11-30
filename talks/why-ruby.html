@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+      Talk | Why Ruby?
+      
+    </title>
+
+    <meta name="author" content="Jikku Jose" />
+
+    <!-- Description -->
+    
+      <meta name="description" content="... away I float, seeking what I am unsure will be mine..">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/reveal.js/css/theme/solarized.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    
+    <link rel="stylesheet" href="/reveal.js/lib/css/solarized.css"/>
+    
+    <link rel="stylesheet" href="/assets/css/modifications.css"/>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/reveal.js/css/print/pdf.css' : '/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://jikkujose.github.io/talks/why-ruby">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+## Why Ruby?
+
+On the philosophy, design goals &amp; versatility of the language.
+</section>
+
+<div class="reveal">
+    <div class="slides">
+        <section>
+          <section data-markdown="">
+          <script type="text/template">
+          ## Design Goal
+          ## Community
+          </script>
+          </section>
+          <section data-markdown="">
+          <script type="text/template">
+          ### Design Goal
+
+          > Maximize developer happiness!  <!-- .element: class="fragment" data-fragment-index="1" -->
+          </script>
+          </section>
+          <section data-markdown="">
+          <script type="text/template">
+          ### Community
+
+          # MINSWAN
+          > Matz Is Nice So We Are Nice <!-- .element: class="fragment" data-fragment-index="2" -->
+          </script>
+          </section>
+          <section data-markdown="">
+          <script type="text/template">
+          ### Usual Suspects from the Dynamic Language world
+
+          -SKIPPING-
+          </script>
+          </section>
+        </section>
+    </div>
+</div>
+
+<section tagcloud="" large="" data-transition="zoom">
+  Less Code
+  Better Abstraction
+  Intuitiveness
+  Pure OO
+  Productivity
+  Duck Typing
+  Learning Curve
+  Simplicity
+  Plethora of Packages
+</section>
+
+<section data-markdown="">
+<script type="text/template">
+## Versatility
+
+> Ability to adapt to many different functions.
+</script>
+</section>
+
+<section data-markdown="">
+## Rubymotion
+
+<pre><code>
+``` ruby
+class HomeScreen &lt; PM::Screen
+  title "Home"
+
+  def on_load
+    set_attributes self.view, {
+      background_color: hex_color("#FFFFFF")
+    }
+  end
+end
+```
+</code></pre>
+</section>
+
+<section data-markdown="">
+## Some code
+
+Just an example to test the syntax highlighting.
+<pre><code>
+``` ruby
+module Talk
+  class Speaker
+    def initialize(name:, age:, company:)
+    end
+  end
+end
+```
+</code></pre>
+</section>
+
+<section>
+<h3>Distribution of smart guys</h3>
+ <iframe class="stretch" id="ruby_distribution" data-chart=""></iframe>
+</section>
+
+<section data-markdown="">
+# Questions?
+</section>
+
+      </div>
+    </div>
+
+    <script src="/reveal.js/lib/js/head.min.js"></script>
+    <script src="/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      var data = [
+          {
+              value: 200,
+              color:"#F7464A",
+              highlight: "#FF5A5E",
+              label: "Ruby"
+          },
+          {
+              value: 50,
+              color: "#46BFBD",
+              highlight: "#5AD3D1",
+              label: "Python"
+          },
+          {
+              value: 100,
+              color: "#FDB45C",
+              highlight: "#FFC870",
+              label: "Javascript"
+          }
+      ];
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        chart : {
+          items : [
+          {
+            selector : "#ruby_distribution",
+            type : "doughnut",
+            data : data,
+            options : {
+              responsive : true
+            },
+            canvas: {
+              width: "300px",
+              height: "300px"
+            }
+          }
+          ]
+        },
+        
+          transition: 'slide',
+        
+          fragments: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/reveal.js/plugin/chartjs/Chart.min.js'},
+          { src: '/reveal.js/plugin/tagcloud/tagcloud.js'},
+          { src: '/reveal.js/plugin/chartjs/charted.js'},
+          { src: '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+  </body>
+</html>
