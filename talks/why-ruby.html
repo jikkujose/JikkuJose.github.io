@@ -23,12 +23,12 @@
 
     <link rel="stylesheet" href="/reveal.js/css/reveal.css"/>
     
-      <link rel="stylesheet" href="/reveal.js/css/theme/solarized.css" id="theme"/>
+      <link rel="stylesheet" href="/reveal.js/css/theme/black.css" id="theme"/>
     
 
     <!-- Code syntax highlighting -->
     
-    <link rel="stylesheet" href="/reveal.js/lib/css/solarized.css"/>
+    <link rel="stylesheet" href="/reveal.js/lib/css/tomorrow-night.css"/>
     
     <link rel="stylesheet" href="/assets/css/modifications.css"/>
 
@@ -60,47 +60,42 @@
 On the philosophy, design goals &amp; versatility of the language.
 </section>
 
-<div class="reveal">
-    <div class="slides">
-        <section>
-          <section data-markdown="">
-          <script type="text/template">
-          ## Design Goal
-          ## Community
-          </script>
-          </section>
-          <section data-markdown="">
-          <script type="text/template">
-          ### Design Goal
+<section>
+<section data-markdown="">
+## Design Goal
+## Community
+</section>
 
-          > Maximize developer happiness!  <!-- .element: class="fragment" data-fragment-index="1" -->
-          </script>
-          </section>
-          <section data-markdown="">
-          <script type="text/template">
-          ### Community
+<section data-markdown="">
+<script type="text/template">
+### Design Goal
 
-          # MINSWAN
-          > Matz Is Nice So We Are Nice <!-- .element: class="fragment" data-fragment-index="2" -->
-          </script>
-          </section>
-          <section data-markdown="">
-          <script type="text/template">
-          ### Usual Suspects from the Dynamic Language world
+> Maximize developer happiness!  <!-- .element: class="fragment" data-fragment-index="1" -->
+</script>
+</section>
 
-          -SKIPPING-
-          </script>
-          </section>
-        </section>
-    </div>
-</div>
+<section data-markdown="">
+<script type="text/template">
+### Community
+
+# MINSWAN
+> Matz Is Nice So We Are Nice <!-- .element: class="fragment" data-fragment-index="1" -->
+</script>
+</section>
+
+<section data-markdown="">
+### Usual Suspects from the Dynamic Language world
+
+-SKIPPING-
+</section>
+</section>
 
 <section tagcloud="" large="" data-transition="zoom">
+  Productivity
   Less Code
   Better Abstraction
   Intuitiveness
   Pure OO
-  Productivity
   Duck Typing
   Learning Curve
   Simplicity
@@ -109,9 +104,18 @@ On the philosophy, design goals &amp; versatility of the language.
 
 <section data-markdown="">
 <script type="text/template">
+## Rails
+
+The killer framework that lets developers become super productive.
+</script>
+</section>
+
+<section>
+<section data-markdown="">
+<script type="text/template">
 ## Versatility
 
-> Ability to adapt to many different functions.
+> Ability to adapt to many different functions. <!-- .element: class="fragment" data-fragment-index="1" -->
 </script>
 </section>
 
@@ -134,28 +138,182 @@ end
 </section>
 
 <section data-markdown="">
-## Some code
+## Shoes.rb
 
-Just an example to test the syntax highlighting.
 <pre><code>
 ``` ruby
-module Talk
-  class Speaker
-    def initialize(name:, age:, company:)
-    end
-  end
+Shoes.app {
+        background white
+        stack(margin: 8) {
+          button "A bed of clams"
+          button "A coalition of cheetahs"
+          button "A gulp of swallows"
+        }
+      }
+```
+</code></pre>
+</section>
+
+<section data-markdown="">
+## Sinatra
+<pre><code>
+``` ruby
+get '/hi' do
+  "Hello World!"
 end
 ```
 </code></pre>
 </section>
 
+<section data-markdown="">
+<pre><code>
+<script type="text/template">
+## CLI
+```
+$ ruby sms.rb 9746105369 'Thats cool!'
+```
+</script>
+</code></pre>
+</section>
+
+<section data-markdown="">
+## CLI
+<pre><code>
+``` ruby
+require 'yes_em_yes'
+
+sender = YesEmYes::Sender.new(
+  user_name: '1234567890',
+   password: 'mypassword',
+    service: :way2sms
+)
+
+sender.draft do |sms|
+  sms.to      = ARGV.first
+  sms.message = AGGV.last
+end
+
+sender.send!
+```
+</code></pre>
+</section>
+
+<section data-markdown="">
+## Opal.rb
+
+<pre><code>
+``` ruby
+ Document.ready? do
+    Element.find('#show-comments').on :click do |click|
+      click.prevent_default
+      click.current_target.hide
+      Element.find('.comments').effect(:fade_in)
+    end
+  end
+```
+</code></pre>
+</section>
+</section>
+
 <section>
-<h3>Distribution of smart guys</h3>
+<section data-markdown="">
+<script type="text/template">
+## Why Not Ruby?
+</script>
+</section>
+</section>
+
+<section tagcloud="" large="" data-transition="zoom">
+  Inferior Performance
+  Poor Multithreading
+  GIL
+  Unsafe
+  No Static Typing
+  Lack of Light Weight Threads
+  High Memory Footprint
+  No Embedability
+</section>
+
+<section data-markdown="">
+<script type="text/template">
+## Why none of them matters for most apps?
+
+> Trade-off for productivity <!-- .element: class="fragment" data-fragment-index="1" -->
+
+</script>
+</section>
+
+<section data-markdown="">
+<script type="text/template">
+## Wait! What if?
+</script>
+</section>
+
+<section>
+<section data-markdown="">
+<script type="text/template">
+## Beyond Ruby
+
+> Imitation is the sincerest form of flattery. <!-- .element: class="fragment" data-fragment-index="1" -->
+</script>
+</section>
+
+<section data-markdown="">
+<script type="text/template">
+## `mRuby`
+
+<!--- ![mruby](http://www.mruby.org/images/mruby_logo_red_icon.png) --->
+
+Standalone/embedable light weight scripting solution.
+
+`www.mruby.org`
+</script>
+</section>
+
+<section data-markdown="">
+<script type="text/template">
+## `Crystal`
+
+Statically type-checked but without having to specify the type of variables or method arguments. Have compile-time evaluation and generation of code, to avoid boilerplate code. Compile to efficient native code.
+
+`www.crystal-lang.org`
+</script>
+</section>
+
+<section data-markdown="">
+<script type="text/template">
+## `Elixir`
+
+Elixir is a dynamic, functional language that leverages the Erlang VM. Its ideal for running low-latency, distributed and fault-tolerant systems.
+
+`www.elixir-lang.org`
+</script>
+</section>
+
+</section>
+
+<section>
+<h3>Active repositories in Github</h3>
  <iframe class="stretch" id="ruby_distribution" data-chart=""></iframe>
 </section>
 
 <section data-markdown="">
+<script type="text/template">
+## Volt
+
+![Volt](/assets/images/why_ruby/volt.png)
+
+Volt is a framework for building data rich web applications shockingly fast.
+
+`www.voltframework.com`
+</script>
+</section>
+
+<section data-markdown="">
 # Questions?
+
+`Jikku Jose, Co-founder at Qucentis`
+`www.jikkujose.in`
 </section>
 
       </div>
@@ -168,22 +326,34 @@ end
       // https://github.com/hakimel/reveal.js#configuration
       var data = [
           {
-              value: 200,
+              value: 132848,
               color:"#F7464A",
               highlight: "#FF5A5E",
               label: "Ruby"
           },
           {
-              value: 50,
+              value: 164852,
               color: "#46BFBD",
               highlight: "#5AD3D1",
               label: "Python"
           },
           {
-              value: 100,
+              value: 323938,
               color: "#FDB45C",
               highlight: "#FFC870",
               label: "Javascript"
+          },
+          {
+              value: 138771,
+              color: "#4CB36D",
+              highlight: "#56CC7B",
+              label: "PHP"
+          },
+          {
+              value: 22264,
+              color: "#4C77B3",
+              highlight: "#5687CC",
+              label: "Go"
           }
       ];
       Reveal.initialize({
@@ -201,8 +371,8 @@ end
               responsive : true
             },
             canvas: {
-              width: "300px",
-              height: "300px"
+              width: "250",
+              height: "250"
             }
           }
           ]
