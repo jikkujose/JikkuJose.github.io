@@ -6,7 +6,7 @@ pages:
   - mv .well-known well-known
   - cp -r * .public
   - mv .public public
-  - mv .public/well-known public/.well-known
+  - mv .public/well-known .public/.well-known
   artifacts:
     paths:
     - public
