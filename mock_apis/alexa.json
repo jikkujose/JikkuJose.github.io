@@ -1,0 +1,39 @@
+{
+  version: "1.0",
+  response: {
+    outputSpeech: {
+      text:
+        "Seems you are doing pretty good on your energy limits but looks like you are close on your water limit, use it conservatively!",
+      type: "PlainText",
+    },
+    card: {
+      content:
+        "Seems you are doing pretty good on your energy limits but looks like you are close on your water limit, use it conservatively!",
+      title: "Greeting - Greeting Message",
+    },
+    reprompt: {
+      outputSpeech: {
+        text: "Ask me to say hello...",
+        type: "PlainText",
+      },
+    },
+    speechletResponse: {
+      outputSpeech: {
+        text:
+          "Seems you are doing pretty good on your energy limits but looks like you are close on your water limit, use it conservatively!",
+      },
+      card: {
+        content:
+          "Seems you are doing pretty good on your energy limits but looks like you are close on your water limit, use it conservatively!",
+        title: "Greeting - Greeting Message",
+      },
+      reprompt: {
+        outputSpeech: {
+          text: "Ask me to say hello...",
+        },
+      },
+      shouldEndSession: true,
+    },
+  },
+  sessionAttributes: {},
+}
