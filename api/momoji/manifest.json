@@ -35,7 +35,7 @@
       "type": "image/png"
     }
   ],
-  "headerTags": [
+  "header_tags": [
     {
       "tag": "link",
       "rel": "apple-touch-icon",
