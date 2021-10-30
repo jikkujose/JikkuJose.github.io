@@ -34,5 +34,68 @@
       "sizes": "512x512",
       "type": "image/png"
     }
+  ],
+  "headerTags": [
+    {
+      "tag": "link",
+      "rel": "apple-touch-icon",
+      "sizes": "180x180",
+      "href": "https://jikkujose.in/api/momoji/images/icons/180x180.png"
+    },
+    {
+      "tag": "link",
+      "rel": "icon",
+      "type": "image/png",
+      "sizes": "32x32",
+      "href": "https://jikkujose.in/api/momoji/images/icons/32x32.png"
+    },
+    {
+      "tag": "link",
+      "rel": "icon",
+      "type": "image/png",
+      "sizes": "16x16",
+      "href": "https://jikkujose.in/api/momoji/images/icons/16x16.png"
+    },
+    {
+      "tag": "link",
+      "rel": "manifest",
+      "href": "https://jikkujose.in/api/momoji/manifest.json"
+    },
+    {
+      "tag": "link",
+      "rel": "mask-icon",
+      "href": "https://jikkujose.in/api/momoji/images/icons/vector.svg",
+      "color": "#5bbad5"
+    },
+    {
+      "tag": "meta",
+      "property": "og:title",
+      "content": "Momoji"
+    },
+    {
+      "tag": "meta",
+      "property": "og:site_name",
+      "content": "Momoji"
+    },
+    {
+      "tag": "meta",
+      "property": "og:url",
+      "content": "https://momoji.surge.sh"
+    },
+    {
+      "tag": "meta",
+      "property": "og:description",
+      "content": "Best Momos in Town"
+    },
+    {
+      "tag": "meta",
+      "property": "og:type",
+      "content": "product"
+    },
+    {
+      "tag": "meta",
+      "property": "og:image",
+      "content": "https://jikkujose.in/api/momoji/images/social_preview.png"
+    }
   ]
 }
