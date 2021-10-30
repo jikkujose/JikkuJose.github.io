@@ -30,6 +30,11 @@
       "type": "image/png"
     },
     {
+      "src": "https://jikkujose.in/api/momoji/images/icons/150x150.png",
+      "sizes": "150x150",
+      "type": "image/png"
+    },
+    {
       "src": "https://jikkujose.in/api/momoji/images/icons/512x512.png",
       "sizes": "512x512",
       "type": "image/png"
