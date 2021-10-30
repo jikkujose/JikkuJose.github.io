@@ -1,0 +1,8 @@
+{
+  "name": "Jikku Jose",
+  "organization": ["StoryBrain", "Qucentis", "OrigoChain"],
+  "socials": [
+    { "key": 0, "label": "Twitter", "url": "https://twitter.com/jikkujose" },
+    { "key": 1, "label": "Facebook", "url": "https://facebook.com/jikkujose" }
+  ]
+}
