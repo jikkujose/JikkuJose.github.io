@@ -1,0 +1,38 @@
+{
+  "name": "Momoji",
+  "description": "Best Momos in Town",
+  "short_name": "Momoji",
+  "vpa": "josemathews27@okaxis",
+  "links": [
+    {
+      "title": "Location",
+      "sub_title": "Visit us between 10 to 8",
+      "url": "https://goo.gl/maps/RcUFWF8mwttaArCg6"
+    },
+    {
+      "title": "Phone",
+      "sub_title": "Call us anytime!",
+      "url": "tel:+918452808073"
+    },
+    {
+      "title": "Instagram",
+      "sub_title": "Follow us to show some love :)",
+      "url": "https://instagram.com/momoji.tvm"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "https://jikkujose.in/api/momoji/images/icons/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://jikkujose.in/api/momoji/images/icons/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
