@@ -2,6 +2,10 @@
 
 Repo for [www.jikkujose.in][site]
 
+## Decomissioning
+
+This structure has served its time. Its going to be torn down soon.
+
 ## Powered by
 
 * [Jekyll][jekyll]
