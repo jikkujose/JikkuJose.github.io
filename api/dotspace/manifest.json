@@ -3,6 +3,7 @@
   "description": "Workplace on Demand",
   "short_name": "DotSpace",
   "vpa": "ajayjos@okaxis",
+  "default_transaction_note": "Rent",
   "links": [
     {
       "title": "Locations",

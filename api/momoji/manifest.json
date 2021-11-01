@@ -3,6 +3,7 @@
   "description": "Best Momos in Town",
   "short_name": "Momoji",
   "vpa": "josemathews27@okaxis",
+  "default_transaction_note": "Snacks",
   "links": [
     {
       "title": "Location",
