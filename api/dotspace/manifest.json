@@ -1,6 +1,6 @@
 {
   "name": "DotSpace",
-  "description": "Workplace on Demand",
+  "description": "Workspace on Demand",
   "short_name": "DotSpace",
   "vpa": "ajayjos@okaxis",
   "default_transaction_note": "Rent",
@@ -91,7 +91,7 @@
     {
       "tag": "meta",
       "property": "og:description",
-      "content": "Workplace on Demand"
+      "content": "Workspace on Demand"
     },
     {
       "tag": "meta",
