@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div
+      class="min-h-screen flex flex-col items-center bg-yellow-100"
+      style="background: #0d1117"
+    >
+      <div class="max-w-2xl w-full text-sm p-6 pb-12 font-inter">
+        <div class="">
+          {% for post in site.posts %}
+          <a
+            class="bg-gray-100 bg-opacity-10 rounded-lg hover:bg-gray-200 hover:bg-opacity-20 transition duration-300 mb-4 p-3 block border-1 border-gray-900"
+            href="{{ site.baseurl }}{{ post.url }}"
+          >
+            <div class="post flex flex-col w-full">
+              <div class="text w-full">
+                <div class="title text-white">{{ post.title }}</div>
+                <time
+                  class="timeago text-gray-400 text-xs"
+                  datetime="{{ post.date | date_to_xmlschema }}"
+                  >{{ post.date | date: "%B %d, %Y" }}</time
+                >
+              </div>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <script>
+      timeago.render(document.querySelectorAll(".timeago"))
+    </script>
+  </body>
+</html>

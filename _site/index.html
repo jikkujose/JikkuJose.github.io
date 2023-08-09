@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="description" content="Personal Blog of Jikku Jose" />
+  <meta name="theme-color" content="#000" />
+
+  <title>Jikku Jose</title>
+
+  <link
+    tag="link"
+    rel="icon"
+    type="image/png"
+    sizes="512x512"
+    href="/assets/logo.svg"
+  />
+  <link tag="link" rel="mask-icon" href="imgur_svg" color="#000" />
+
+  <meta tag="meta" property="og:title" content="PWA" />
+  <meta tag="meta" property="og:site_name" content="PWA" />
+  <meta tag="meta" property="og:url" content="PAGE_URL" />
+  <meta tag="meta" property="og:description" content="Progressive Web App" />
+  <meta tag="meta" property="og:type" content="product" />
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/timeago.js@4.0.2/dist/timeago.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="/assets/styles/github-markdown-dark.css"
+  />
+  <link rel="stylesheet" href="/assets/styles/fonts.css" />
+  <link rel="stylesheet" href="/assets/styles/custom.css" />
+  <link rel="stylesheet" href="/assets/styles/syntax.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+  />
+  <meta
+    tag="meta"
+    property="og:image"
+    content="/assets/logo.svg"
+  />
+</head>
+
+  <body>
+    <div
+      class="min-h-screen flex flex-col items-center bg-yellow-100"
+      style="background: #0d1117"
+    >
+      <div class="max-w-2xl w-full text-sm p-6 pb-12 font-inter">
+        <div class="">
+          
+          <a
+            class="bg-gray-100 bg-opacity-10 rounded-lg hover:bg-gray-200 hover:bg-opacity-20 transition duration-300 mb-4 p-3 block border-1 border-gray-900"
+            href="/2023/08/08/anniversary.html"
+          >
+            <div class="post flex flex-col w-full">
+              <div class="text w-full">
+                <div class="title text-white">15 years!</div>
+                <time
+                  class="timeago text-gray-400 text-xs"
+                  datetime="2023-08-08T00:00:00+05:30"
+                  >August 08, 2023</time
+                >
+              </div>
+            </div>
+          </a>
+          
+          <a
+            class="bg-gray-100 bg-opacity-10 rounded-lg hover:bg-gray-200 hover:bg-opacity-20 transition duration-300 mb-4 p-3 block border-1 border-gray-900"
+            href="/2021/08/03/private-vim.html"
+          >
+            <div class="post flex flex-col w-full">
+              <div class="text w-full">
+                <div class="title text-white">Private Vim</div>
+                <time
+                  class="timeago text-gray-400 text-xs"
+                  datetime="2021-08-03T00:00:00+05:30"
+                  >August 03, 2021</time
+                >
+              </div>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+    <script>
+      timeago.render(document.querySelectorAll(".timeago"))
+    </script>
+  </body>
+</html>

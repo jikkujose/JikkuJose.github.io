@@ -1,0 +1,9 @@
+title: Jikku Jose
+email: jikku@storybrain.com
+description: >-
+  Blog
+baseurl: ""
+url: ""
+
+plugins:
+  - jekyll-feed

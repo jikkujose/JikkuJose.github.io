@@ -1,0 +1,48 @@
+.markdown-body img {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid #161c26;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.markdown-body img:hover {
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+}
+
+.markdown-body table tr {
+  transition: background-color 0.5s ease;
+}
+
+.markdown-body table tr:hover {
+  background-color: rgba(48, 54, 61, 0.5);
+}
+
+.markdown-body pre {
+  transition: background-color 0.5s ease;
+}
+
+.markdown-body pre:hover {
+  background-color: rgba(48, 54, 61, 0.5);
+}
+
+.markdown-body blockquote {
+  transition: background-color 0.5s ease;
+}
+
+.markdown-body blockquote:hover {
+  background-color: rgba(48, 54, 61, 0.3);
+}
+
+.markdown-body .highlighter-rouge + div {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.markdown-body pre.highlight {
+  border-radius: 8px;
+}
+
+.markdown-body .highlighter-rouge div.highlight {
+  background: transparent;
+}

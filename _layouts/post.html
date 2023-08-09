@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div
+      class="min-h-screen flex flex-col items-center"
+      style="background: #0d1117"
+    >
+      <div class="title-card items-center w-full flex flex-col pt-6">
+        <div class="text-block w-full max-w-2xl px-6">
+          <div class="title text-2xl text-white mb-1">{{ page.title }}</div>
+          <div class="meta flex text-xs text-gray-500">
+            <time class="timeago" datetime="{{ page.date | date_to_xmlschema }}"
+              >{{ page.date | date: "%B %d, %Y" }}</time
+            >
+            <div class="text-gray-600 px-1">by</div>
+            <a
+              href="{{ site.baseurl | append: '/about.html' }}"
+              class="author font-bold hover:text-gray-400"
+              >Jikku Jose</a
+            >
+            <div class="text-gray-600 px-1">in</div>
+            <a
+              href="{{ site.baseurl | append: '/' }}"
+              class="author font-bold hover:text-gray-400"
+              >jikkujose.in</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="max-w-2xl w-full markdown-body text-sm p-6 pb-12 font-inter">
+        {{ content }}
+      </div>
+    </div>
+    <script>
+      timeago.render(document.querySelectorAll(".timeago"))
+    </script>
+  </body>
+</html>

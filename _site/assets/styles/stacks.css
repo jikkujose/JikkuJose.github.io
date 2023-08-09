@@ -1,0 +1,49 @@
+:root {
+  --duration: 0.4s;
+  --scale1: 1.05;
+  --scale2: 1.1;
+  --scale3: 1.15;
+  --shadow1: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow2: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  --shadow3: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  --spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.photo-stack {
+  /* position: relative; */
+}
+
+.photo-stack img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid #f3f3f3;
+  display: block;
+  transition: all var(--duration) var(--spring);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05); /* Initial low-level shadow */
+  cursor: pointer;
+}
+
+/* first image animation properties */
+.blog-card:focus #photo1,
+.blog-card:hover #photo1 {
+  transform: rotate(9deg) scale(var(--scale1));
+  box-shadow: var(--shadow1); /* Add shadow */
+  z-index: 1;
+}
+
+/* second image animation properties */
+.blog-card:focus #photo2,
+.blog-card:hover #photo2 {
+  transform: rotate(0deg) scale(var(--scale2));
+  box-shadow: var(--shadow2); /* Add shadow */
+  z-index: 2;
+}
+
+/* third image animation properties */
+.blog-card:focus #photo3,
+.blog-card:hover #photo3 {
+  transform: rotate(-9deg) scale(var(--scale3));
+  box-shadow: var(--shadow3); /* Add shadow */
+  z-index: 3;
+}
