@@ -1,3 +1,3 @@
-# Jekyll Blog
+# jikkujose.in
 
-Testing Jekyll
+Porting to a simple Jekyll setup
