@@ -14,13 +14,13 @@ contributions to a major open source project.
 I know most of those terms are vague, lets try to start with some simple
 definitions:
 
-1. Open Source Project
+### Open Source Project
 
 Any project hosted in Github/Gitlab/Bitbucket that has a permissible license
 like MIT/GPL (or similar). We can even give a set of suggestions (say ~200/300
 projects to choose from).
 
-2. Meaningful contributions
+### Meaningful contributions
 
 Any contributions that are marked by their maintainers as "meaningful". We can
 work with maintainers to expose a set of beginner friendly tasks that can be
