@@ -1,3 +1,0 @@
-# Jekyll Blog
-
-Testing Jekyll
