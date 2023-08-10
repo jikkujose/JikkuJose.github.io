@@ -22,7 +22,9 @@ example TabNine & Github Copilot.
 I have packed all these settings into an alias that can easily invoke a private
 session of Neovim:
 
-`alias np='unshare -rn nvim --clean -n -c "set nobackup noswapfile noundofile"'`
+``` zsh
+alias np='unshare -rn nvim --clean -n -c "set nobackup noswapfile noundofile"'
+```
 
 ![Private Vim]({{ site.baseurl }}/assets/private_vim.png)
 
