@@ -3,7 +3,7 @@ email: jikku@storybrain.com
 description: >-
   Blog
 baseurl: ""
-url: ""
+url: "https://jikkujose.in"
 
 plugins:
   - jekyll-feed
