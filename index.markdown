@@ -1,5 +1,6 @@
 ---
 layout: index
-title: "List"
-date: "January 31, 2022"
+title: "Jikku Jose"
+description: "Personal Blog of Jikku Jose"
+date: "September 22, 2023"
 ---
