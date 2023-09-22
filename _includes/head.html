@@ -4,7 +4,10 @@
     name="viewport"
     content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
   />
-  <meta name="description" content="Personal Blog of Jikku Jose" />
+  <meta
+    name="description"
+    content="{{ page.description || site.description }}"
+  />
   <meta name="theme-color" content="#000" />
 
   <title>{{ page.title }}</title>
@@ -24,7 +27,7 @@
   />
 
   <meta tag="meta" property="og:title" content="{{ page.title }}" />
-  <meta tag="meta" property="og:site_name" content="{{ page.description }}" />
+  <meta tag="meta" property="og:site_name" content="{{ page.title }}" />
   <meta tag="meta" property="og:url" content="https://jikkujose.in" />
   <meta tag="meta" property="og:description" content="{{ page.description }}" />
   <meta tag="meta" property="og:type" content="blog" />
