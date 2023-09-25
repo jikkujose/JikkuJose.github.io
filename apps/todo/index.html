@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1.5.10/css/pico.min.css"
+    />
+    <script src="https://cdn.toolbomber.com/js/WebArray.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo App</h1>
+      <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Enter a new task" />
+        <button type="submit">Add Task</button>
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+    <script type="module">
+      const getQueryParam = name => {
+        const urlParams = new URLSearchParams(window.location.search)
+        return urlParams.get(name)
+      }
+
+      const setQueryParam = (name, value) => {
+        const urlParams = new URLSearchParams(window.location.search)
+        urlParams.set(name, value)
+        window.history.replaceState({}, "", `?${urlParams}`)
+      }
+
+      const seed =
+        getQueryParam("id") ||
+        (() => {
+          const newSeed = Math.random().toString(36).substring(2)
+          setQueryParam("id", newSeed)
+          return newSeed
+        })()
+
+      ;(async () => {
+        const keys = await WebArray.generateKeys(seed)
+        const wa = new WebArray(keys)
+        const todos = await wa.read()
+        const todoForm = document.getElementById("todo-form")
+        const todoInput = document.getElementById("todo-input")
+        const todoList = document.getElementById("todo-list")
+
+        const renderTodos = () => {
+          todoList.innerHTML = ""
+          todos.forEach((todo, index) => {
+            const li = document.createElement("li")
+            li.textContent = todo
+            li.addEventListener("click", () => {
+              todos.splice(index, 1)
+              todoList.removeChild(li)
+              wa.replace(todos)
+            })
+            todoList.appendChild(li)
+          })
+        }
+
+        todoForm.addEventListener("submit", async e => {
+          e.preventDefault()
+          const newTodo = todoInput.value.trim()
+          if (newTodo) {
+            todos.push(newTodo)
+            await wa.replace(todos)
+            todoInput.value = ""
+            renderTodos()
+          }
+        })
+
+        renderTodos()
+      })()
+    </script>
+  </body>
+</html>
