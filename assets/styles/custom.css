@@ -5,6 +5,14 @@
   transition: all 0.3s ease-in-out;
 }
 
+.markdown-body ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .markdown-body img:hover {
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
   transform: scale(1.02);
